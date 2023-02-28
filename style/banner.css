@@ -41,7 +41,6 @@
     font-weight: 400;
     line-height: 21px;
     color: var(--pure-white);
-    background: url("../assets/svgs/Lupa.svg");
-    background-repeat: no-repeat;
-    background-position: 6em;
+    background: url("../assets/svgs/Lupa.svg") no-repeat;
+    background-position: 2em;
 }

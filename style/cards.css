@@ -16,16 +16,28 @@
 .card-card {
     background-color: var(--pure-white);
     border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 380px;
-    height: 295px;
-    padding: 16px;
-    margin: 20px 25px 22px 25px;
+    padding: 23px 16px;
+    margin: 0px 25px 32px 25px;
 }
 
-.card-card__cima,
+.card-card__cima {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
 .card-card__baixo {
     display: flex;
+    justify-content: space-between;
 }
+
+.card-descricao__avaliacao {
+    width: 91px;
+}
+
 .card-descricao {
     display: flex;
     flex-direction: column;
@@ -54,10 +66,19 @@
     height: 166px;
 }
 
-.card-card__baixo {
-    justify-content: space-between;
+.card-botoes {
+    display: flex;
+    padding: 0.5em;
+    gap: 32px;
 }
 
-.card-botoes {
-
+.botao-saiba-mais {
+    background-color: var(--redish-gray);
+    padding: 1em 2.4em;
+    text-align: center;
+    color: var(--pure-white);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--main-font);
+    text-decoration: none;
 }

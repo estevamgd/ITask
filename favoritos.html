@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ITask | Favoritos</title>
+    <link href="style/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="menu">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-botao menu-content">
+            <label for="menu">
+                <span class="menu-menu container__botao-imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Categoria 1</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Categoria 2</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Categoria 3</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Categoria 4</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Categoria 5</a>
+                </li>
+            </ul>
+            <img src="assets/imgs/logos%201.png" alt="Logo" class="menu-content">
+        </div>
+        <div class="container">
+            <a href="favoritos.html" class="menu-favoritos menu-content"><img src="assets/svgs/Favoritos.svg" alt="favoritos"></a>
+            <a href="#" class="menu-carrinho menu-content" ><img src="assets/svgs/Compras.svg" alt="carrinho"></a>
+            <a href="#" class="menu-perfil menu-content"><img src="assets/svgs/Usuario.svg" alt="perfil"></a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">categorias</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Eletrecista.svg"></a>
+                    <a href="#" class="swiper-slide__name">Eletrecistas</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Arquiteto.svg"></a>
+                    <a href="#" class="swiper-slide__name">Arquitetos</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Engenheiro.svg"></a>
+                    <a href="#" class="swiper-slide__name">Engenheiros</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Limpeza.svg"></a>
+                    <a href="#" class="swiper-slide__name">Limpezas</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Pintor.svg"></a>
+                    <a href="#" class="swiper-slide__name">Pintores</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Marceneiro.svg"></a>
+                    <a href="#" class="swiper-slide__name">Marceneiros</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Arquiteto.svg"></a>
+                    <a href="#" class="swiper-slide__name">Arquitetos</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Telhado.svg"></a>
+                    <a href="#" class="swiper-slide__name">Telhados</a>
+                </div>
+                <div class="swiper-slide"><a href="#" class="swiper-slide__image">
+                    <img src="assets/svgs/Profissoes/Ar-Condicionado.svg"></a>
+                    <a href="#" class="swiper-slide__name">Ar-Condicionados</a>
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section class="cards">
+        <h2 class="cards-main-tittle">favoritos</h2>
+        <div class="cards-body">
+            <div class="card-card">
+                <div class="card-card__cima">
+                    <div class="card-descricao">
+                        <img src="assets/svgs/Estrelinhas.svg" alt="Estrelas de Avaliação" class="card-descricao__avaliacao">
+                        <h2 class="card-descricao__profissao">Eletrecista</h2>
+                        <h3 class="card-descricao__nome">Carla da Silva</h3>
+                        <p class="card-descricao__texto">Eletrecista Formada pelo SENAI</p>
+                    </div>
+                    <div class="card-imagem">
+                        <img src="assets/imgs/Perfil-escritora%201.png" class="card-imagem__foto" alt="Foto do nosso profissional">
+                    </div>
+                </div>
+                <div class="card-card__baixo">
+                    <ul class="card-botoes">
+                        <li class="botao-item botao-item__favorito"><img src="assets/svgs/Favoritos.svg"
+                                                                         alt="favoritar profissional"></li>
+                        <li class="botao-item botao-item__carrinho"><img src="assets/svgs/Compras.svg" alt="adicionar profissional
+            ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botao-saiba-mais">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card-card">
+                <div class="card-card__cima">
+                    <div class="card-descricao">
+                        <img src="assets/svgs/Estrelinhas.svg" alt="Estrelas de Avaliação" class="card-descricao__avaliacao">
+                        <h2 class="card-descricao__profissao">Engenheira</h2>
+                        <h3 class="card-descricao__nome">Juliana Agarikov</h3>
+                        <p class="card-descricao__texto">Texto exemplo de descrição de engenheira</p>
+                    </div>
+                    <div class="card-imagem">
+                        <img src="assets/imgs/eletricista-mulher-SP%201.png" class="card-imagem__foto" alt="Foto do nosso profissional">
+                    </div>
+                </div>
+                <div class="card-card__baixo">
+                    <ul class="card-botoes">
+                        <li class="botao-item botao-item__favorito"><img src="assets/svgs/Favoritos.svg" alt="favoritar
+            profissional"></li>
+                        <li class="botao-item botao-item__carrinho"><img src="assets/svgs/Compras.svg" alt="adicionar profissional
+            ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botao-saiba-mais">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card-card">
+                <div class="card-card__cima">
+                    <div class="card-descricao">
+                        <img src="assets/svgs/Estrelinhas.svg" alt="Estrelas de Avaliação" class="card-descricao__avaliacao">
+                        <h2 class="card-descricao__profissao">Pintor</h2>
+                        <h3 class="card-descricao__nome">Daniel Junior</h3>
+                        <p class="card-descricao__texto">Pintor e artista descrição texto teste</p>
+                    </div>
+                    <div class="card-imagem">
+                        <img src="assets/imgs/pintor.png" class="card-imagem__foto" alt="Foto do nosso profissional">
+                    </div>
+                </div>
+                <div class="card-card__baixo">
+                    <ul class="card-botoes">
+                        <li class="botao-item botao-item__favorito"><img src="assets/svgs/Favoritos.svg" alt="favoritar
+            profissional"></li>
+                        <li class="botao-item botao-item__carrinho"><img src="assets/svgs/Compras.svg" alt="adicionar profissional
+            ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botao-saiba-mais">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+        <h2 class="contato-titulo">Fique por dentro das novidades!</h2>
+        <p class="contato-texto">Atualizações e novos taskers perto de você
+            em seu e-mail</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato-email">
+    </section>
+</main>
+<footer>
+    <h2 class="itask">ITask</h2>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+
+
+        // pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</body>
+</html>
