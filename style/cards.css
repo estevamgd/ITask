@@ -1,0 +1,63 @@
+.cards-main-tittle {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--redish-gray);
+    background-color: var(--pure-white);
+    padding: 1em 0 0.5em 0;
+}
+
+.cards-body {
+    background-color: var(--secondary-white);
+    padding: 1.5em 0;
+}
+
+.card-card {
+    background-color: var(--pure-white);
+    border-radius: 10px;
+    width: 380px;
+    height: 295px;
+    padding: 16px;
+    margin: 20px 25px 22px 25px;
+}
+
+.card-card__cima,
+.card-card__baixo {
+    display: flex;
+}
+.card-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-descricao__profissao {
+    font-size: 16px;
+    color: var(--redish-gray);
+    font-weight: 700;
+}
+
+.card-descricao__nome {
+    font-size: 18px;
+    color: var(--dark-red);
+    font-weight: 700;
+}
+
+.card-descricao__texto {
+    font-size: 14px;
+    color: var(--black);
+}
+
+.card-imagem__foto {
+    width: 161px;
+    height: 166px;
+}
+
+.card-card__baixo {
+    justify-content: space-between;
+}
+
+.card-botoes {
+
+}

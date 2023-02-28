@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>ITask</title>
   <link href="reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
@@ -42,14 +43,87 @@
   </nav>
 </header>
 <main>
-  <div class="banner">
+  <section class="banner">
     <h2 class="banner-tittle banner-content">Já sabe por onde começar?</h2>
     <p class="banner-text banner-content">Contate um de nossos Taskers para <br>resolver sua Task</p>
     <input type="search" placeholder="Pesquise um Tasker ou Task" class="banner-searchbar">
-  </div>
+  </section>
+  <section class="carrossel">
+    <h2 class="carrossel-titulo">categorias</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Engenheiro"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Pintor"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Arquiteto"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Telhado"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Limpeza"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Ar-condicionado"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Marceneiros"></div>
+        <div class="swiper-slide"><img src="assets/svgs/#" alt="Icone de Eletrecistas"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section class="cards">
+    <h2 class="cards-main-tittle">populares na regiao</h2>
+    <div class="cards-body">
+      <div class="card-card">
+        <div class="card-card__cima">
+          <div class="card-descricao">
+            <h2 class="card-descricao__profissao">Eletrecista</h2>
+            <h3 class="card-descricao__nome">Carla da Silva</h3>
+            <p class="card-descricao__texto">Eletrecista Formada pelo SENAI</p>
+          </div>
+          <div class="card-imagem">
+            <img src="assets/imgs/#" class="card-imagem__foto" alt="Foto do nosso profissional">
+          </div>
+        </div>
+        <div class="card-card__baixo">
+          <ul class="card-botoes">
+            <li class="botao-item botao-item__favorito"><img src="assets/svgs/Favoritos.svg" alt="favoritar
+            profissional"></li>
+            <li class="botao-item botao-item__carrinho"><img src="assets/svgs/Compras.svg" alt="adicionar profissional
+            ao carrinho"></li>
+          </ul>
+          <a href="#" class="botao-saiba-mais">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <footer>
 
 </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 10,
+
+
+      // pagination
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
