@@ -6,4 +6,5 @@
     padding: 17px 0 24px 24px;
     border-top: 1px solid;
     border-top-color: var(--black);
+    bottom: 100%;
 }

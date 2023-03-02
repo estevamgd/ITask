@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ITask | Cadastrar-se</title>
+    <link href="style/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="menu">
+        <div class="container">
+            <a href="index.html"><img src="assets/imgs/logos%201.png" alt="Logo" class="menu-content"></a>
+            <a href="index.html" class="titulo-principal"><h1>ITask</h1></a>
+        </div>
+        <div class="container">
+            <a href="favoritos.html" class="menu-favoritos menu-content"><img src="assets/svgs/Favoritos.svg" alt="favoritos"></a>
+            <a href="compras.html" class="menu-carrinho menu-content" ><img src="assets/svgs/Compras.svg" alt="carrinho"></a>
+            <input type="checkbox" id="perfil" class="container-botao menu-content">
+            <label for="perfil">
+                <span class="menu-perfil container__botao-imagem"></span>
+            </label>
+            <ul class="lista-usuario listas">
+                <li class="lista-menu__titulo">Perfil</li>
+                <li class="lista-menu__item">
+                    <a href="login.html" class="lista-menu__link">Entrar</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="cadastrar.html" class="lista-menu__link">Cadastrar-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="login">
+        <h2 class="login-titulo">cadastrar-se</h2>
+        <ul class="lista-login">
+            <li class="lista-login__item lista-login__item-email">
+                <p class="login-dados login-dados__email">Email:</p>
+                <input type="email" placeholder="email" class="login-input input__email">
+            </li>
+            <li class="lista-login__item lista-login__item-senha">
+                <p class="login-dados login-dados__senha">Senha:</p>
+                <input type="password" placeholder="senha" class="login-input input__senha">
+            </li>
+            <li class="lista-login__item lista-login__subdados">
+                <input type="submit" value="cadastrar-se" class="login-button">
+                <a href="login.html" class="login-cadastrar subdado-link">Entrar</a>
+            </li>
+        </ul>
+
+    </section>
+</main>
+<footer>
+    <h2 class="itask">ITask</h2>
+</footer>
+</body>
+</html>
