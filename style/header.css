@@ -107,3 +107,10 @@
 .lista-usuario__link {
     color: var(--dark-red);
 }
+
+.titulo-principal {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--main-red);
+}
