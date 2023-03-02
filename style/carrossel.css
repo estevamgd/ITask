@@ -10,6 +10,7 @@
 
 .swiper {
     background-color: var(--secondary-white);
+    z-index: 1;
 }
 
 .swiper-slide {
